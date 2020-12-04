@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ConsoleClient/1.0.0": {
+        "dependencies": {
+          "TrailsCalculator": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleClient.dll": {}
+        }
+      },
+      "TrailsCalculator/1.0.0": {
+        "runtime": {
+          "TrailsCalculator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TrailsCalculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

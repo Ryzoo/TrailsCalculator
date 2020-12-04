@@ -1,0 +1,9 @@
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\bin\Debug\netcoreapp3.1\TrailsCalculator.deps.json
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\bin\Debug\netcoreapp3.1\TrailsCalculator.dll
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\bin\Debug\netcoreapp3.1\TrailsCalculator.pdb
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\obj\Debug\netcoreapp3.1\TrailsCalculator.csprojAssemblyReference.cache
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\obj\Debug\netcoreapp3.1\TrailsCalculator.AssemblyInfoInputs.cache
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\obj\Debug\netcoreapp3.1\TrailsCalculator.AssemblyInfo.cs
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\obj\Debug\netcoreapp3.1\TrailsCalculator.csproj.CoreCompileInputs.cache
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\obj\Debug\netcoreapp3.1\TrailsCalculator.dll
+C:\Users\gkast\RiderProjects\TrailsCalculator\TrailsCalculator\obj\Debug\netcoreapp3.1\TrailsCalculator.pdb
