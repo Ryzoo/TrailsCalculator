@@ -28,7 +28,7 @@ namespace TrailsCalculator.Calculators
             _maxSpeed = double.MinValue;
         }
 
-        public override void Calculate(PointModel point)
+        protected override void Calculate(PointModel point)
         {
             _totalDistance += CurrentDistance;
             _totalTime += CurrentTime;

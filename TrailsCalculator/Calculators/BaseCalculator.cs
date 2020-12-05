@@ -14,13 +14,14 @@ namespace TrailsCalculator.Calculators
         protected TimeSpan CurrentTime;
         protected TimeSpan TimeTolerance;
 
+        protected abstract void Calculate(PointModel point);
+        public abstract void Presentation();
+        
         public BaseCalculator()
         {
-            Tollerance = 0.0000007;
+            Tollerance = 0.00007;
             TimeTolerance = TimeSpan.FromMinutes(3);
         }
-        public abstract void Presentation();
-        public abstract void Calculate(PointModel point);
 
         public void Handle(PointModel point)
         {

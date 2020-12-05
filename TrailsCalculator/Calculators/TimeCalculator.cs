@@ -10,7 +10,7 @@ namespace TrailsCalculator.Calculators
         private double _descentTime;
         private double _flatTime;
 
-        public override void Calculate(PointModel point)
+        protected override void Calculate(PointModel point)
         {
             _totalTrackTime += CurrentTime.TotalHours;
             

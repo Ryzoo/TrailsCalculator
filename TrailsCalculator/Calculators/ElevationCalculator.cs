@@ -22,7 +22,7 @@ namespace TrailsCalculator.Calculators
             _maxElevation = double.MinValue;
         }
         
-        public override void Calculate(PointModel point)
+        protected override void Calculate(PointModel point)
         {
             if (point.Elevation > _maxElevation) _maxElevation = point.Elevation;
             if (point.Elevation < _minElevation) _minElevation = point.Elevation;

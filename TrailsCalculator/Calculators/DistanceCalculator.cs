@@ -10,7 +10,7 @@ namespace TrailsCalculator.Calculators
         private double _descentDistance;
         private double _flatDistance;
 
-        public override void Calculate(PointModel point)
+        protected override void Calculate(PointModel point)
         {
             _totalDistance += CurrentDistance;
             _climbingDistance += CurrentClimb > Tollerance ? CurrentDistance : 0;
