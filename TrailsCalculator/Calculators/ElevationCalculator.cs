@@ -12,7 +12,6 @@ namespace TrailsCalculator.Calculators
         private double _totalDescent;
         private double _totalBalance;
         
-        //TMP
         private double _totalElevation;
         private int _elevationRaportCount;
 

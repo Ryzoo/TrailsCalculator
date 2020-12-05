@@ -12,7 +12,6 @@ namespace TrailsCalculator.Calculators
         private double _avgDescentSpeed;
         private double _avgFlatSpeed;
         
-        //TMP
         private double _totalDistance;
         private TimeSpan _totalTime;
         private TimeSpan _climbingTime;

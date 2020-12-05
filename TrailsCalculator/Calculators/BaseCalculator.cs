@@ -5,44 +5,45 @@ namespace TrailsCalculator.Calculators
 {
     public abstract class BaseCalculator : ICalculator
     {
+        private readonly TimeSpan _timeTolerance;
+        private PointModel _lastPoint;
+        
         protected readonly double Tollerance;
         
-        protected PointModel LastPoint;
         protected double CurrentDistance;
         protected double CurrentClimb;
         protected double CurrentSpeed;
         protected TimeSpan CurrentTime;
-        protected TimeSpan TimeTolerance;
 
+        protected BaseCalculator()
+        {
+            Tollerance = 0.0003;
+            _timeTolerance = TimeSpan.FromMinutes(3);
+        }
+        
         protected abstract void Calculate(PointModel point);
         public abstract void Presentation();
-        
-        public BaseCalculator()
-        {
-            Tollerance = 0.00007;
-            TimeTolerance = TimeSpan.FromMinutes(3);
-        }
 
         public void Handle(PointModel point)
         {
-            if (LastPoint is null)
+            if (_lastPoint is null)
             {
-                LastPoint = point;
+                _lastPoint = point;
                 return;
             }
             
-            CurrentDistance = new GeoPoints(LastPoint, point).GetDistance();
-            CurrentClimb = point.Elevation - LastPoint.Elevation;
-            CurrentTime = point.Time - LastPoint.Time;
+            CurrentDistance = new GeoPoints(_lastPoint, point).GetDistance();
+            CurrentClimb = point.Elevation - _lastPoint.Elevation;
+            CurrentTime = point.Time - _lastPoint.Time;
 
-            if (CurrentTime > TimeTolerance) 
-                CurrentTime = TimeTolerance;
+            if (CurrentTime > _timeTolerance) 
+                CurrentTime = _timeTolerance;
             
             CurrentSpeed = CurrentDistance / CurrentTime.TotalHours;
                 
             Calculate(point);
             
-            LastPoint = point;
+            _lastPoint = point;
         }
     }
 }
